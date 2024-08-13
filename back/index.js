@@ -29,5 +29,6 @@ app.get('/', (req, res) => {
 // });
 
 app.use(require('./routes/getRoutes'));
+app.use(require('./routes/postRoutes'));
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`)); //서버를 정상 실행할 시 메시지 출력
